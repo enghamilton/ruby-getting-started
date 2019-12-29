@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   	
   #get 'home#saudacao'
   #get '/my_new_api', to: 'api#my_new_api', as: :api
-  match '/home/' => 'home#saudacao'
+  match '/home/' => 'home#saudacao', via : 'get'
   #match "profile" => "users#show"
   #match "saudacao" => "home#saudacao"
   
