@@ -8,12 +8,7 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
   	
-  #get 'home#saudacao'
-  #get '/my_new_api', to: 'api#my_new_api', as: :api
-  match '/home/' => 'home#saudacao', via : 'get'
-  #match "profile" => "users#show"
-  #match "saudacao" => "home#saudacao"
-  
+  get 'home/product' 
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
